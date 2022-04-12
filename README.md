@@ -1,13 +1,16 @@
 # MIRTH: Metabolite Imputation via Rank Transformation and Harmonization
 
+This repository contains code for MIRTH imputation, as well as a scaled-down demonstration of imputation benchmarking.
+
 ## Dependencies:
 
 This method requires NumPy, Pandas, and PyTorch. We recommend using an Anaconda environment with Python>=3.7. To install PyTorch:
 ```
 conda install pytorch torchvision -c pytorch
 ```
+## Instructions for Imputing Data with MIRTH
 
-## Running MIRTH Imputation: 
+### Running MIRTH Imputation: 
 
 <!--Data available here:--> 
 
@@ -20,7 +23,7 @@ python python/impute.py -in <data_folder>
 
 Please note that imputation of the 9 metabolomics datasets (1727 samples x 1904 features) on which MIRTH was benchmarked takes ~5 minutes on a personal machine.
 
-## Output:
+### Output:
 
 MIRTH outputs the following data files:
 - `raw_aggregate_data.csv`: the aggregate data matrix consisting of the merged raw datasets
@@ -32,7 +35,7 @@ Additionally, MIRTH outputs the sample and feature embedding matrices, `sample_e
 Finally, when cross-validation is enabled, MIRTH outputs `cv_folds_scores.csv`, which logs the mean absolute error in each fold for each number of embedding dimensions sampled.
 
 
-## Additional Options:
+### Additional Options:
 
 By default, the resulting imputed data will be saved to the directory `MIRTH_out`. This default can be changed with the `-rd` flag:
 ```
@@ -46,3 +49,7 @@ Cross-validation is disabled by default. Cross-validation will automatically fin
 ```
 python python/impute.py -in <data_folder> -c -cd <cv_dims_start> <cv_dims_stop> -cf <n_folds>
 ```
+
+## Scaled-down demonstration of MIRTH imputation performance
+
+<!-- description of what people need to do to run the jupyter notebook demo -->
