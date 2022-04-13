@@ -51,5 +51,15 @@ python python/impute.py -in <data_folder> -c -cd <cv_dims_start> <cv_dims_stop> 
 ```
 
 ## Scaled-down demonstration of MIRTH imputation performance
+The easiest way to view the Jupyter Notebook demonstration in on this GitHub repository. Please navigate to the `MIRTHdemocode.ipynb` file.
 
-<!-- description of what people need to do to run the jupyter notebook demo -->
+To run the Jupyter Notebook demonstration, locally install Jupyter Notebook and the required dependencies used in the demonstration.
+```
+conda install -c conda-forge notebook
+```
+
+Then, in the command line, navigate to the directory in which the `MIRTHdemocode.ipynb` file is in and run the following:
+```
+jupyter notebook
+```
+This should open up Jupyter Notebook in a web browser. Click on the `MIRTHdemocode.ipynb` file to open it, and run each cell of the file in order from the top.
