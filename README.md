@@ -12,7 +12,7 @@ conda install pytorch torchvision -c pytorch
 
 ### Running MIRTH Imputation: 
 
-<!--Data available here:--> 
+Data available here: https://www.dropbox.com/sh/c2zquiqrzlg06a9/AAA-8_V2RGJQuSzUCs-dk7eba?dl=0
 
 To run MIRTH imputation:
 1) Save all metabolomics datasets as `.csv` files to a single folder, placed in the main directory. The header in each `.csv` file should consist of sample names; the first column should consist of feature names. Feature names should be harmonized across all datasets under consideration.
@@ -53,13 +53,14 @@ python python/impute.py -in <data_folder> -c -cd <cv_dims_start> <cv_dims_stop> 
 ## Scaled-down demonstration of MIRTH imputation performance
 The easiest way to view the Jupyter Notebook demonstration in on this GitHub repository. Please navigate to the `MIRTHdemocode.ipynb` file.
 
-To run the Jupyter Notebook demonstration, locally install Jupyter Notebook and the required dependencies used in the demonstration.
+To run the Jupyter Notebook demonstration locally, install Jupyter Notebook and the required dependencies used in the demonstration.
 ```
 conda install -c conda-forge notebook
 ```
 
-Then, in the command line, navigate to the directory in which the `MIRTHdemocode.ipynb` file is in and run the following:
+Then, at the command line, navigate to the directory containing `MIRTHdemocode.ipynb` and run the following:
 ```
 jupyter notebook
 ```
-This should open up Jupyter Notebook in a web browser. Click on the `MIRTHdemocode.ipynb` file to open it, and run each cell of the file in order from the top.
+This should open Jupyter Notebook in a web browser. Click on the `MIRTHdemocode.ipynb` file to open it, and run each cell of the file in order from the top.
+
