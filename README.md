@@ -58,6 +58,9 @@ To run the Jupyter Notebook demonstration locally, install Jupyter Notebook and 
 conda install -c conda-forge notebook
 ```
 
+
+By default, the demonstration reads raw data from a `data_demo` folder in the same directory as `MIRTHdemocode.ipynb`. Create such a folder, and place there the desired datasets as `.csv` files. Our demonstration works best with fewer datasets, in the interest of runtime: we recommend using the BrCa2, PaCa, and RC3 datasets.
+
 Then, at the command line, navigate to the directory containing `MIRTHdemocode.ipynb` and run the following:
 ```
 jupyter notebook
