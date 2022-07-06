@@ -1,5 +1,7 @@
 # MIRTH: Metabolite Imputation via Rank Transformation and Harmonization
 
+[![DOI](https://zenodo.org/badge/480924180.svg)](https://zenodo.org/badge/latestdoi/480924180)
+
 This repository contains code for MIRTH imputation, as well as a scaled-down demonstration of imputation benchmarking.
 
 **Please read `LICENSE.md` before using MIRTH for your own purposes.**
