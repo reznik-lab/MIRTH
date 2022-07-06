@@ -2,7 +2,9 @@
 
 This repository contains code for MIRTH imputation, as well as a scaled-down demonstration of imputation benchmarking.
 
-## Dependencies:
+**Please read `LICENSE.md` before using MIRTH for your own purposes.**
+
+## Dependencies
 
 This method requires NumPy, Pandas, and PyTorch. We recommend using an Anaconda environment with Python>=3.7. To install PyTorch:
 ```
@@ -12,7 +14,7 @@ conda install pytorch torchvision -c pytorch
 
 ### Running MIRTH Imputation: 
 
-Data available here: https://www.dropbox.com/sh/c2zquiqrzlg06a9/AAA-8_V2RGJQuSzUCs-dk7eba?dl=0
+Benchmarking data available here: https://www.dropbox.com/sh/c2zquiqrzlg06a9/AAA-8_V2RGJQuSzUCs-dk7eba?dl=0
 
 To run MIRTH imputation:
 1) Save all metabolomics datasets as `.csv` files to a single folder, placed in the main directory. The header in each `.csv` file should consist of sample names; the first column should consist of feature names. Feature names should be harmonized across all datasets under consideration.
